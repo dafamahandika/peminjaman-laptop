@@ -1,0 +1,13 @@
+.input {
+    position: absolute;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 30px;
+}
+
+.container form .btn {
+    border-radius: 50px;
+    width: 30%;
+}

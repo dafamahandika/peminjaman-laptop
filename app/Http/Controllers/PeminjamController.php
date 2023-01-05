@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Peminjaman;
+use App\Models\DataLaptop;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -14,7 +15,7 @@ class PeminjamController extends Controller
     }
 
     public function create(){
-        $data = Peminjaman::all();
+        $data = DataLaptop::all();
         //dd($data);
         return view('peminjam.create',compact('data'));
     }
@@ -49,7 +50,7 @@ class PeminjamController extends Controller
 
         ]);
 
-        return redirect('/create')->with('success','Peminjaman Berhasil Dilakukan!');
+        return redirect()->intended('list-peminjaman')->with('success','Peminjaman Berhasil Dilakukan!');
     }
 
     

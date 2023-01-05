@@ -68,7 +68,7 @@ class AdminController extends Controller
     }
 
     public function deleteLaboranData($id){
-        User::where('id', $id)->Delete();
+        User::where('id', $id)->Delete();   
         return redirect(route('account'));
     }
 

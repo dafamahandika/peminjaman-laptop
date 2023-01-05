@@ -32,8 +32,8 @@
                         <br>
                         <div class="row align-items-start">
                             <div class="col-sm-6">
-                                <label>Username</label>
-                                <input type="text" class="form-control" name="email">
+                                <label>Email</label>
+                                <input type="email" class="form-control" name="email">
                             </div>
                             
                             <div class="col-sm-6">

@@ -32,8 +32,8 @@
                         <br>
                         <div class="row align-items-start">
                             <div class="col-sm-6">
-                                <label>Username</label>
-                                <input type="text" class="form-control" name="email" value="{{$data->email}}">
+                                <label>Email</label>
+                                <input type="Email" class="form-control" name="email" value="{{$data->email}}">
                             </div>
                             
                             <div class="col-sm-6">

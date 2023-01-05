@@ -42,6 +42,7 @@
                     @else
                     <td>-</td>
                     @endif
+                    <td></td>
                 </tr>
                 @endforeach
             </tbody>

@@ -49,9 +49,9 @@
         <ul class="navbar-nav navbar-right">
           <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
             <img alt="image" src="../../../assets/admin/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-            <div class="d-sm-none d-lg-inline-block">Hi</div></a>
+            <div class="d-sm-none d-lg-inline-block">Hi {{ auth()->user()->name }}</div></a>
             <div class="dropdown-menu dropdown-menu-right">
-              <a href="" class="dropdown-item has-icon text-danger">
+              <a href="{{ route('logout') }}" class="dropdown-item has-icon text-danger">
                 <i class="fas fa-sign-out-alt"></i> Logout
               </a>
             </div>
@@ -64,9 +64,12 @@
             <a href="#">PPLG</a>
           </div>
           <ul class="sidebar-menu">
-              <li class="menu-header">Dashboard</li>
+              <li class="menu-header">Menu</li>
               <li class="nav-item dropdown">
                 <a href="{{route('peminjaman')}}"><i class="fas fa-home"></i><span>Dashboard</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="/"><i class="fas fa-home"></i><span>Home</span></a>
               </li>
               <li class="nav-item dropdown">
                 <a href="{{route('dataLaptop')}}"><i class="fas fa-money-bill"></i> <span>Data Laptop</span></a>

@@ -119,12 +119,10 @@
                 <div class="form-group">
                     <label for="">No Laptop</label>
                     <select name="no_laptop"  class="form-control"  required>
-                        <option hidden>Pilih Nomor Laptop</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
+                    <option hidden>Pilih Laptop</option>    
+                    @foreach( $data as $dt)
+                        <option value="{{ $dt->no_laptop }}">{{ $dt->no_laptop }}</option>
+                    @endforeach
                     </select>
                 </div>
                 <div class="form-group">
